@@ -2,11 +2,14 @@
   "extends": [
     "next/core-web-vitals",
     "prettier",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
   ],
   "rules": {
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
     "sort-imports": [
       "error",
       {
@@ -31,7 +34,9 @@
             "group": "internal"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["internal"],
+        "pathGroupsExcludedImportTypes": [
+          "internal"
+        ],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true

@@ -1,5 +1,7 @@
 import { ReactNode } from "react"
 
+import { Container } from "./Button.styles"
+
 interface ButtonProps {
   children: ReactNode
   type?: "button" | "submit" | "reset"
@@ -12,8 +14,8 @@ export default function Button({
   type = "button",
 }: ButtonProps) {
   return (
-    <button onClick={onClick} type={type}>
+    <Container onClick={onClick} type={type}>
       {children}
-    </button>
+    </Container>
   )
 }
