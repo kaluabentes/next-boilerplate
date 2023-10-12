@@ -1,6 +1,6 @@
-# Droptron
+# Next.js Boilerplate
 
-A Shopify purchasing experience from space.
+A starter point for new Next.js 13+ apps.
 
 ## Getting Started
 
