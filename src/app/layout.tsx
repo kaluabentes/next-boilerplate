@@ -1,7 +1,9 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 
-const inter = Inter({ subsets: ["latin"] })
+import StyledComponentsRegistry from "@/lib/styled-components/StyledComponentsRegistry"
+// import "@/styles/font"
+
+import RootProviders from "./providers"
 
 export const metadata: Metadata = {
   title: "Droptron",
@@ -15,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <StyledComponentsRegistry>
+          <RootProviders>{children}</RootProviders>
+        </StyledComponentsRegistry>
+      </body>
     </html>
   )
 }
